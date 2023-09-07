@@ -23,7 +23,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     position: fixed;
-    background: url('../img/cover.png') no-repeat;
+    background: url('https://images4.alphacoders.com/227/227438.png') no-repeat;
     background-position: center;
     background-size: cover;
     transition: background-image 1s;
