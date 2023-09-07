@@ -23,7 +23,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     position: fixed;
-    background: url('https://images4.alphacoders.com/227/227438.png') no-repeat;
+    background: url('../img/bg_site.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     transition: background-image 1s;
@@ -57,23 +57,22 @@ body {
 
 .web-player {
     height: 100%;
-    color: #fff;
+    color: #FF6347;
     padding: 5px;
     position: relative;
     z-index: 3;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .cover-album {
-    max-width: 60%;
+    max-width: 100%;
     margin: auto;
     background: url('../img/cover.png') no-repeat;
     background-size: cover;
-    border: 2px solid #fefefe;
+    border: 2px solid #FF6347;
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.4);
     transition: background-image 1s;
-    border-radius: 10px;
-
+    border-radius: 15px;
     margin-bottom: 15px;
 }
 
@@ -85,8 +84,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-     border-radius: 10px;
-  
+     border-radius: 15px;
     transition: background-image 1s;
 }
 
@@ -95,14 +93,21 @@ body {
 }
 
 .info-current-song {
-    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   color: tomato;  
     text-align: center;
 }
 
 .info-current-song h2 {
-    font-size: 46px;
+    font-size: 26px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
+    background: -webkit-linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;  
    
 }
 
@@ -113,7 +118,7 @@ body {
 }
 
 .play-pause {
-    font-size: 65px;
+    font-size: 45px;
 
    
  
@@ -121,11 +126,13 @@ body {
 
 .play-pause i {
     cursor: pointer;
+    
 }
 
 .volume-icon {
-    font-size: 28px;
+    font-size: 15px;
     margin-top: -5px;
+    
 }
 
 .volume-slide {
@@ -137,14 +144,14 @@ body {
 }
 
 .vagalume a {
-    color: #fff;
+    color: #FF6347;
     text-decoration: underline;
 }
 
 .lyrics {
     text-transform: uppercase;
     text-decoration: underline;
-    color: #fff;
+    color: #FFF;
     font-size: 1em;
     font-weight: 400;
     outline: none;
@@ -153,12 +160,12 @@ body {
 
 .lyrics:active {
     text-decoration: none;
-    color: #fff;
+    color: #FFF;
 }
 
 .lyrics:visited {
     text-decoration: none;
-    color: #fff;
+    color: #FF6347;
 }
 
 .modal-content {
@@ -260,13 +267,14 @@ input[type=range]::-ms-thumb {
 
 
 .historic h2 {
-    color: #fff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px
+    solid #fff;
     font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
     margin: 10px 0;
-    
+    background: -webkit-linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;  
 }
 
 
@@ -279,14 +287,14 @@ input[type=range]::-ms-thumb {
 }
 
 .historic .cover-historic { 
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
     margin-right: 15px;
     float: left;
     border-radius: 10px;
     background: url('../img/cover.png') no-repeat;
     background-size: cover;
-    border: 2px solid #fefefe;
+    border: 2px solid #FF6347;
    
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-image 1s;
@@ -294,20 +302,20 @@ input[type=range]::-ms-thumb {
 
 /* COLOR TEXTO INFO ARTISTA */
 .historic .music-info {
-    color: white;
-    font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;  
 }
 
 
 /* COLOR TEXTO CANCION */
 
 .historic .music-info .song {
-    width: 100%;
-    font-weight: bold;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: -5px;
-    color: white;
+  background: -webkit-linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;  
 }
 
 @media(max-width: 370px) {
@@ -351,8 +359,8 @@ input[type=range]::-ms-thumb {
 
     .cover-album {
         margin: 10px auto;
-        min-width: 320px;
-        height: 320px;
+        min-width: 300px;
+        height: 300px;
     }
 
     .logo img {
@@ -367,6 +375,7 @@ input[type=range]::-ms-thumb {
 
     .volume-control {
         margin-top: 10%;
+        color: #FFFF00;
     }
 }
 
@@ -374,15 +383,15 @@ input[type=range]::-ms-thumb {
     padding-left: 10px;
 }
 #playerButton {
-    color: black;
+    color: #FFFF00;
 }
 .play-pause i {
     cursor: pointer;
 }
 .btn-play {
-    background-color: white;
+    background-color: red;
     border: none;
-    color: black;
+    color: yellow;
     padding: 12px 25px;
     font-size: 16px;
     font-weight: bold;
